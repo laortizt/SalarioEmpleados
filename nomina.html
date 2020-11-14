@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Formulario de Nomina</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   
+    <nav class="main-menu">
+        <div class="logo" style="font-size: 120px; color: #be4bdb;">
+            <i class="fab fa-aviato"></i>
+        </div>
+
+        <ul class="opt-menu"> 
+            <li><a href="#"style="text-decoration:none">Inicio</a></li>
+            <li><a href="#"style="text-decoration:none">Nosotros</a></li>
+            <li><a href="./nomina.html"style="text-decoration:none" target="_blank">Nomina</a></li>
+        </ul>
+    </nav>
+
+<section class="formulario">
+    <div class="container">
+        <h1 style="color: white;">Formulario Empleado</h1>
+    </div>
+
+    <form method="GET" action="" class="form-flex">
+        <div class="input-form">
+           <div><label for="documento">Documento</label></div> 
+            <input id="documento" name="documento" type="number" required> 
+        </div>
+        <div class="input-form">
+           <div><label for="nombre">Nombre</label></div> 
+            <input id="nombre" name="nombre" type="text" required> 
+        </div>
+        <div class="input-form">
+            <div><label for="apellido">Apellido</label></div>
+            <input id="apellido" name="apellido"type="text" required>
+        </div>
+        <div class="input-form">
+            <div><label for="correo">Correo</label></div>
+            <input id="correo" name="correo" type="email" required>
+        </div>
+        <div class="input-form">
+            <div><label for="genero">Género</label></div>
+            <input id="mujer" name="genero" type="radio">
+            <label for="mujer">Mujer</label>
+            <input id="hombre" name="genero" type="radio">
+            <label for="hombre">Hombre</label>
+        </div class="input-form" >
+        
+        
+        <div class="input-form">
+            <div><label for="PCR">¿Ha hecho la prueba PCR?</label></div>
+            <input id="si" name="PCR" type="radio">
+            <label for="si">Si</label>
+            <input id="no" name="PCR" type="radio">
+            <label for="no">No</label>
+        </div>
+        <div class="input-form">
+            <div><label for="sueldo">Sueldo Mensual</label></div>
+            <input id="sueldo" name="sueldo" type="number" required>
+        </div>
+        <div class="input-form" style="text-align: center;">
+            <div style="text-align: center; width: 100%; "><label for="sueldo">PERIODO A PAGAR</label></div>
+        </div>
+        <div class="input-form">
+            <div><label for="fechaIn">Fecha Inicio</label></div>
+            <input id="fechaIn" name="fechaIn" type="date" required>
+        </div>
+        <div class="input-form">
+            <div><label for="fechaIn">Fecha final</label></div>
+            <input id="fechaFin" name="fechaFin" type="date" required>
+        </div>
+
+        <div class="form-button">
+            <input id="identificacion"type="hidden" value="1">
+            <button type="submit">Calcular</button> 
+        </div> 
+        
+    </form>
+</section>
+<footer>
+    <p> <i class="fas fa-cat"></i> Hecho por Luz Adriana Ortiz Torres <i class="fas fa-cat"></i>
+</footer>
+
+</body>
+</html>
