@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-   
+<body>   
     <nav class="main-menu">
         <div class="logo" style="font-size: 120px; color: #be4bdb;">
             <i class="fab fa-aviato"></i>
@@ -19,8 +18,8 @@
 
         <ul class="opt-menu"> 
             
-            <li><a href="./nomina.html"style="text-decoration:none" target="_blank">CALCULAR</a></li>
-            <li><a href="#"style="text-decoration:none">VIDEO</a></li>
+            <li><a href="./nomina.html"style="text-decoration:none" target="_blank">Formulario</a></li>
+            <li><a href="#"style="text-decoration:none">Video</a></li>
         </ul>
     </nav>
 
@@ -28,16 +27,18 @@
     <div class="container">
         <h1 style="color: white;">Formulario Empleado</h1>
     </div>
-
-    <form method="GET" action="" class="form-flex">
+    
+    <form id="form" class="form-flex">
         <div class="input-form">
-           <div><label for="documento">Documento</label></div> 
+            <div><label for="documento">Documento</label></div> 
             <input id="documento" name="documento" type="number" required> 
         </div>
+
         <div class="input-form">
            <div><label for="nombre">Nombres</label></div> 
             <input id="nombre" name="nombre" type="text" required> 
         </div>
+
         <div class="input-form">
             <div><label for="apellido">Apellidos</label></div>
             <input id="apellido" name="apellido"type="text" required>
@@ -46,14 +47,14 @@
             <div><label for="correo">Correo</label></div>
             <input id="correo" name="correo" type="email" required>
         </div>
+
         <div class="input-form">
             <div><label for="genero">Género</label></div>
             <input id="mujer" name="genero" type="radio">
             <label for="mujer">Mujer</label>
             <input id="hombre" name="genero" type="radio">
             <label for="hombre">Hombre</label>
-        </div class="input-form" >
-        
+        </div>        
         
         <div class="input-form">
             <div><label for="PCR">¿Ha hecho la prueba PCR?</label></div>
@@ -67,7 +68,7 @@
             <input id="sueldo" name="sueldo" type="number" required>
         </div>
         <div class="input-form" style="text-align: center;">
-            <div style="text-align: center; width: 100%; "><label for="sueldo">PERIODO A PAGAR</label></div>
+            <div style="text-align: center; width: 100%; "><label for="periodo">PERIODO A PAGAR</label></div>
         </div>
         <div class="input-form">
             <div><label for="fechaIn">Fecha Inicio</label></div>
@@ -81,13 +82,52 @@
         <div class="form-button">
             <input id="identificacion"type="hidden" value="1">
             <button type="submit">Calcular</button> 
-        </div> 
-        
+        </div>        
     </form>
 </section>
+
+<section class="formulario-result">
+    <div class="container">
+        <h1 style="color: white;">Devengado</h1>
+    </div>
+
+    <div class="resultado-flex">
+        <div class="resultado-fila">
+            <div>Dias Laborados</div> 
+            <div id="diasLaborados">--</div> 
+        </div>
+        <div class="resultado-fila">
+            <div>Salario Neto</div> 
+            <div id="salarioNeto">--</div> 
+        </div>
+        <div class="resultado-fila">
+            <div>Auxilio de Transporte</div> 
+            <div id="auxilioTransporte">--</div> 
+        </div>
+
+        <h1 style="color: white;">Descuentos</h1>
+        <div class="resultado-fila">
+            <div>Salud</div> 
+            <div id="aporteSalud">--</div> 
+        </div>
+        <div class="resultado-fila">
+            <div>Pension Obligatoria</div> 
+            <div id="aportePension">--</div> 
+        </div>
+        <div class="resultado-fila">
+            <div>Cesantias</div> 
+            <div id="cesantias">--</div> 
+        </div>
+
+        <h1 style="color: white;">TOTAL A PAGAR</h1>
+        <div id="pagoTotal">--</div> 
+    </form>
+</section>
+
 <footer>
     <p> <i class="fas fa-cat"></i> Hecho por Luz Adriana Ortiz Torres <i class="fas fa-cat"></i>
 </footer>
-
+    <script src="./js/scripts.js"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>        
 </body>
 </html>

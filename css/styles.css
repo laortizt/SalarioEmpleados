@@ -68,12 +68,12 @@ body{
 .input-form input[type="email"],
 .input-form input[type="password"] {
     width: 30%;
-  
 }
+
 .form-button{
     text-align: center;
-    
 }
+
 .form-button button{
     
     background-color: #be4bdb;
@@ -93,3 +93,20 @@ footer{
 .fa-cat{
     color:black;
 }
+/*-------resultado*/
+
+.formulario-result{
+    background-color: #be4bdb;
+    width: 50%;
+    border-radius: 10%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.resultado-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ 
+
